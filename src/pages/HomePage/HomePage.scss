@@ -1,0 +1,17 @@
+@use "../../scss" as *;
+.section {
+    padding: 0 2rem;
+    @include mobile {
+        padding: 0 5%;
+        justify-content: center;
+    }
+
+    &__header {
+        @include flex(space-between, center);
+        h2 {
+            @include mobile {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
